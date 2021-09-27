@@ -2,6 +2,10 @@ const fastify = require('fastify')({ logger: true })
 const students = require('./ students.js')
 
 fastify.get('/', async (request, reply) => {
+  return 'Bienvenido a Sicei'
+})
+
+fastify.get('/students', async (request, reply) => {
   return students
 })
 
